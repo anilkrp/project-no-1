@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>MY web page</title>
+</head>
+
+<body>
+    <h1 style="color:red;text-align:center;">Welcome to My Web Page!</h1>
+    <h1 style="color:blue;"> Message borad homapages</h1>
+    <ol>
+        {% for post in object_list %}
+        <li>{{post.text}}</li>
+        {% endfor %}
+    </ol>
+
+</body>
+
+</html>
